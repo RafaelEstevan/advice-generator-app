@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: var(--dark-grayish-blue);
+    color: var(--light-cyan);
+    max-width: 17em;
+    min-width: auto;
+    padding: 1.875em;
+    font-size: 1.75em;
+}
+
+h1 {
+    font-size: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--neon-green);
+    margin-bottom: 0;
+}
+
+#advice {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 1.2em;
+}
+
+img .desktop {
+    position: absolute;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.btn {
+    position: absolute;
+    background-color: var(--neon-green);
+    background-position: 50%;
+    width: 2.2em;
+    height: 2.2em;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+    bottom: -1em;
+    
+}
+
+.btn:hover {
+    box-shadow: -1px 1px 25px 12px rgba(82, 255, 168, 0.5);
+    -webkit-box-shadow: -1px 1px 25px 12px rgba(82, 255, 168, 0.5);
+    -moz-box-shadow: -1px 1px 25px 12px rgba(82, 255, 168, 0.5);
+    transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 400px){
+    body{
+        min-height: 80vh;
+    }
+    .container{
+        display: flex;
+        width: 250px;
+    }
+    img{
+        width: 300px;
+    }
+}
